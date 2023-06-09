@@ -65,4 +65,51 @@ function Mahasiswa1(nama, energi) {
 
 let Ahmad1 = new Mahasiswa1("Ahmad", 10);
 
-// 4.
+// 4. Prototype
+function Mahasiswa(nama, energi) {
+  this.nama = nama;
+  this.energi = energi;
+}
+
+Mahasiswa.prototype.makan = function (porsi) {
+  this.energi += porsi;
+  console.log(`Halo ${this.nama}, selamat makan`);
+};
+
+Mahasiswa.prototype.main = function (jam) {
+  this.energi -= jam;
+  console.log(`Halo ${this.nama}, selamat main`);
+};
+
+Mahasiswa.prototype.tidur = function (jam) {
+  this.energi += jam * 2;
+  console.log(`Halo ${this.nama}, selamat tidur`);
+};
+
+let Ahmad2 = new Mahasiswa("Ahmad", 10);
+
+// versi Class
+class Mahasiswa2 {
+  constructor(nama, energi) {
+    this.nama = nama;
+    this.energi = energi;
+  }
+
+  makan(porsi) {
+    this.energi += porsi;
+    console.log(`Halo ${this.nama}, selamat makan`);
+  }
+
+  main(jam) {
+    this.energi -= jam;
+    console.log(`Halo ${this.nama}, selamat main`);
+  }
+
+  tidur(jam) {
+    this.energi += jam * 2;
+    console.log(`Halo ${this.nama}, selamat tidur`);
+  }
+}
+
+let Ahmad3 = new Mahasiswa("Ahmad", 10);
+let Maulana1 = new Mahasiswa("Maulana", 20);
