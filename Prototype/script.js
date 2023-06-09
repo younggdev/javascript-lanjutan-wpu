@@ -28,14 +28,17 @@ const methodMahasiswa = {
     this.energi -= jam;
     console.log(`Halo ${this.nama}, selamat main`);
   },
+
+  tidur: function (jam) {
+    this.energi += jam * 2;
+    console.log(`Halo ${this.nama}. selamat tidur`);
+  },
 };
 
 function Mahasiswa(nama, energi) {
-  let mahasiswa = {};
+  let mahasiswa = Object.create(methodMahasiswa);
   mahasiswa.nama = nama;
   mahasiswa.energi = energi;
-  mahasiswa.makan = methodMahasiswa.makan;
-  mahasiswa.main = methodMahasiswa.main;
 
   return mahasiswa;
 }
