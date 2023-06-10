@@ -35,6 +35,8 @@ function cetakURL(username) {
 
 console.log(cetakURL(username));
 
+// latihan
+
 function satu() {
   var Nama = "Ahmad";
   console.log(Nama);
