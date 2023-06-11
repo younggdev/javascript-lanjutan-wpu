@@ -1,4 +1,5 @@
 // 1. Object Literal
+
 let mahasiswa1 = {
   nama: "Ahmad",
   energi: 10,
