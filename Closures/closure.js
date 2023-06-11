@@ -8,6 +8,8 @@ let panggilNama = init();
 panggilNama("Ahmad");
 panggilNama("Maulana");
 
+// contoh 1
+
 function ucapkanSalam(waktu) {
   return (nama) => {
     console.log(`Halo ${nama}, selamat ${waktu}, semoga harimu menyenangkan`);
@@ -20,6 +22,8 @@ let selamatMalam = ucapkanSalam("malam");
 
 selamatPagi("Ahmad");
 selamatMalam("Maulana");
+
+// contoh 2
 
 let add = (() => {
   let counter = 0;
